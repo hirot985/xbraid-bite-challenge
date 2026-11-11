@@ -1,0 +1,27 @@
+/* Standalone dialog: all selectors stay inside this presentation. */
+.ranking-reveal{box-sizing:border-box;position:fixed;inset:0;width:min(440px,calc(100vw - 24px));height:min(700px,calc(100dvh - 28px));max-height:calc(100dvh - 28px);max-width:none;margin:auto;padding:0;border:3px solid #fff7e9;border-radius:28px;color:#16324a;background:#fff7e9;box-shadow:0 20px 80px #052b4c55;overflow:hidden;font-family:'M PLUS Rounded 1c','Hiragino Maru Gothic ProN','Yu Gothic',sans-serif}
+.ranking-reveal::backdrop{background:#103f4dd9;backdrop-filter:blur(5px)}
+.ranking-reveal *{box-sizing:border-box}.ranking-reveal [hidden]{display:none!important}
+.ranking-reveal__panel{height:100%;min-height:0;display:flex;flex-direction:column;padding:17px 18px max(16px,env(safe-area-inset-bottom));background:radial-gradient(circle at 0 35%,#d8f1e9,transparent 62%),#fff7e9}
+.ranking-reveal__header{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-shrink:0}
+.ranking-reveal__brand{font:900 12px Arial,sans-serif;letter-spacing:1px;color:#087c82}
+.ranking-reveal__close{width:44px;height:44px;flex-shrink:0;border:1px solid #d4dfd5;border-radius:50%;background:#fffdf5;font:400 29px/1 Arial,sans-serif;color:#234856}
+.ranking-reveal__context{margin:6px 0 12px;font-size:11px;font-weight:800;color:#367777;text-align:center;flex-shrink:0}
+.ranking-reveal__announce{flex:1;min-height:0;overflow:auto;text-align:center;display:flex;flex-direction:column;justify-content:center;align-items:center;padding:14px 0}
+.ranking-reveal__eyebrow{font-size:15px;font-weight:900;margin:0 0 6px;color:#087c82}
+.ranking-reveal__rank{margin:0;display:flex;align-items:baseline;justify-content:center;gap:4px;max-width:100%;color:#f36436;line-height:1.1}
+.ranking-reveal__rank strong{font:900 clamp(60px,21vw,105px)/1.15 Arial,sans-serif;letter-spacing:-4px;overflow-wrap:anywhere;min-width:0;text-shadow:2px 3px 0 white}
+.ranking-reveal__rank span{font-size:28px;font-weight:900;flex-shrink:0}
+.ranking-reveal__name{margin:15px 0 5px;max-width:100%;overflow-wrap:anywhere;font-weight:900;font-size:20px}
+.ranking-reveal__time{margin:0;font-weight:900;font-size:23px}.ranking-reveal__outside{margin:14px 0 0;font-size:12px;font-weight:900;color:#087c82;background:#d9efe7;padding:6px 15px;border-radius:20px}
+.ranking-reveal__state{font-size:clamp(23px,7vw,32px);line-height:1.5;margin:16px 0;overflow-wrap:anywhere}.ranking-reveal__message{font-size:13px;line-height:1.8;overflow-wrap:anywhere}
+.ranking-reveal__board{display:flex;flex-direction:column;flex:1;min-height:0}.ranking-reveal__board-title{text-align:center;font-size:26px;letter-spacing:1px;color:#087c82;margin:0 0 12px}
+.ranking-reveal__scroll{position:relative;min-height:0;flex:1;overflow-y:auto;overscroll-behavior:contain;padding:4px 3px 14px;scrollbar-width:thin;scrollbar-color:#68aaa2 #e6eee2;touch-action:pan-y pinch-zoom}
+.ranking-reveal__list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px}
+.ranking-reveal__row{display:flex;align-items:center;gap:9px;min-height:64px;padding:10px 9px;background:#fffefa;border:1px solid #e3e2cf;border-radius:15px}
+.ranking-reveal__row--own{border:2px solid #f57840;background:#fff0d4}.ranking-reveal__place{font:900 19px Arial,sans-serif;flex-shrink:0;color:#087c82}.ranking-reveal__row-name{flex:1;min-width:0;font-size:12px;font-weight:800;overflow-wrap:anywhere}.ranking-reveal__row-name small{display:block;font-size:10px;color:#ca5227;margin-top:3px}.ranking-reveal__score{flex-shrink:0;font:900 16px Arial,sans-serif}.ranking-reveal__separator{font-weight:800;font-size:11px;color:#387b7c;margin:18px 4px 8px}.ranking-reveal__empty{text-align:center;padding:24px 10px;font-size:13px;line-height:1.8}
+.ranking-reveal__footer{flex-shrink:0;padding-top:10px}.ranking-reveal__hint{font-size:10px;text-align:center;color:#537875;margin:0 0 9px}.ranking-reveal__next{display:block;width:100%;min-height:52px;border:0;border-bottom:4px solid #c54b25;border-radius:17px;background:#ff713d;color:white;font:900 17px 'M PLUS Rounded 1c',sans-serif;touch-action:manipulation}.ranking-reveal__next:disabled{opacity:.5;cursor:wait}.ranking-reveal button:focus-visible,.ranking-reveal__scroll:focus-visible{outline:3px solid #087c82;outline-offset:-3px}
+@media(max-height:600px){.ranking-reveal__panel{padding-top:8px}.ranking-reveal__context{margin:2px 0 6px}.ranking-reveal__rank strong{font-size:66px}.ranking-reveal__name{font-size:16px;margin-top:7px}.ranking-reveal__outside{margin-top:6px}.ranking-reveal__board-title{font-size:22px;margin-bottom:6px}}
+@media(prefers-reduced-motion:reduce){.ranking-reveal *{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
+
+.ranking-reveal__scroll[data-running=true]{overflow-y:hidden;touch-action:none;scroll-behavior:auto!important}.ranking-reveal__close:disabled{opacity:.35;cursor:wait}

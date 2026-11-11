@@ -1,0 +1,9 @@
+/* Reveal the vertically lifted fish through the water surface, head first. */
+.fish-reveal{position:absolute;inset:0;z-index:3;pointer-events:none;clip-path:inset(0 0 47.916667% 0);overflow:hidden}
+.fish-reveal .fight-fish{width:44%;transform-origin:center center}
+.game-stage[data-species=tachiuo] .fish-reveal .fight-fish{width:48%}
+.game-stage[data-state=landed] .signal{top:4%}
+.game-stage[data-state=landed] .signal h2{font-size:31px;line-height:1.1}
+.game-stage[data-state=landed] .signal-kicker{margin-bottom:4px}
+.game-stage[data-state=landed] .signal-caption{font-size:10px;margin-top:3px}
+@media(max-width:360px){.game-stage[data-state=landed] .signal h2{font-size:27px}.game-stage[data-state=landed] .signal-caption{font-size:9px}}

@@ -1,0 +1,9 @@
+/* The boat, body and cap are a stationary clean plate. Only the arm cutout and rod rotate. */
+.angler-sprite,.cap-brand-layer{transform:none!important;transform-origin:50% 50%}
+.angler-sprite{-webkit-mask-image:none;mask-image:none}
+.angler-arms{position:absolute;inset:0;width:100%;height:100%;object-fit:fill;pointer-events:none;z-index:-1;-webkit-mask-image:url('assets/angler-arms-mask.svg?v=20261111.4-gh');mask-image:url('assets/angler-arms-mask.svg?v=20261111.4-gh');-webkit-mask-size:100% 100%;mask-size:100% 100%;transform-origin:20.3125% 48.2421875%;transform:rotate(var(--arm-r,0deg));filter:none;will-change:auto}
+.dynamic-rod{transform-origin:20.3125% 48.2421875%;transform:rotate(var(--arm-r,0deg))}
+.game-stage[data-state=result] .angler-arms{display:none}.game-stage:not([data-state=result]) .angler-arms{opacity:1;visibility:visible;filter:none}
+.xbt-angler{transform:none!important;filter:none}.xbt-arms,.xbt-rod{position:absolute;inset:0;display:block;width:100%;height:100%;pointer-events:none;transform-origin:20.3125% 48.2421875%;transform:rotate(var(--arm-r,0deg))}.xbt-arms{-webkit-mask-image:url('assets/angler-arms-mask.svg?v=20261111.4-gh');mask-image:url('assets/angler-arms-mask.svg?v=20261111.4-gh');-webkit-mask-size:100% 100%;mask-size:100% 100%}.xbt-rod{overflow:visible}.xbt-rod path{fill:none;stroke-linecap:round;stroke:#293e52;stroke-width:24}.xbt-rod .xbt-rod-shine{stroke:#778993;stroke-width:5;opacity:.55}
+
+.xbt-rod .xbt-guide{stroke:#ff8d30;stroke-width:13;stroke-linecap:round}

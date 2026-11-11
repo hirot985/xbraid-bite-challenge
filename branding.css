@@ -1,0 +1,14 @@
+/* Exact, unchanged logo supplied by xbraidygk.jp; dark backing retains its white letters. */
+.brand{display:flex;align-items:center;justify-content:center;width:205px;padding:13px 16px;background:#132c3b;border-radius:10px;line-height:1;box-shadow:0 2px 0 #071c2b;flex:none}
+.brand img{display:block;width:100%;height:auto}.brand>svg{display:none}
+.cap-brand-layer{position:absolute;inset:0;z-index:-1;pointer-events:none;transform-origin:34.1797% 58.59375%;transform:translate(var(--angler-x,0),var(--angler-y,0)) rotate(var(--angler-r,0deg));filter:none;opacity:1;visibility:visible;will-change:auto}
+.cap-badge{position:absolute;left:14.84%;top:30.8%;width:11.52%;padding:0;background:none;border-radius:0;transform:rotate(-18deg) skewX(-6deg);box-shadow:none;opacity:1}
+.cap-badge img{display:block;width:100%;height:auto;pointer-events:none}
+.game-stage[data-state=result] .cap-brand-layer{display:none}
+.shell-caption .mini-brand{display:flex;width:72px;background:#183644;border-radius:4px;padding:4px 5px}.mini-brand img{display:block;width:100%;height:auto}
+@media(max-width:680px){.brand{width:136px;padding:10px 12px;border-radius:8px}.header-note{margin-left:2px;font-size:7px}.shell-caption .mini-brand{width:62px;padding:4px 5px}}
+@media(max-width:360px){.brand{width:127px;padding:9px 11px}}
+.tutorial-replay-button{display:block;width:100%;padding:12px 9px;margin:16px 0 10px;border:1px solid #8dc7bc;border-radius:14px;background:#e2f4e9;color:#21696c;font-size:13px;font-weight:800}
+.tutorial-entry-button{display:flex;align-items:center;justify-content:center;gap:8px;width:calc(100% - 28px);min-height:46px;margin:11px 14px 0;border:2px solid #97ceca;border-radius:16px;background:#eaf8ef;color:#205d65;font-size:15px;font-weight:900;box-shadow:0 3px 0 #d2e9de;touch-action:manipulation}
+.tutorial-entry-button>span{font:900 14px Arial,sans-serif;color:#159c9d}.tutorial-entry-button:hover{background:#dbf3e7}.tutorial-entry-button:active{transform:translateY(2px);box-shadow:0 1px 0 #d2e9de}
+@media(max-width:360px){.tutorial-entry-button{min-height:44px;font-size:13px;margin-top:9px;width:calc(100% - 22px);margin-left:11px;margin-right:11px}}
